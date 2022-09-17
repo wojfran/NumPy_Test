@@ -71,3 +71,29 @@ y = np.ones((5,5))
 y[1:4, 1:4] = 0
 y[2,2] = 9
 print(f'\n{y}')
+
+# testing maths
+p = np.array([2, 3, 1])
+print(p)
+print(p+2)
+print(p/2)
+print(p*3)
+print(p**4)
+print(np.sin(p))
+
+# doing some linear algebra
+a = np.full((2, 3), 6)
+print(a)
+b = np.full((3,2), 2)
+print(b)
+print(np.matmul(a, b))
+print(np.linalg.det(np.matmul(a, b)))
+
+# statistics
+s = np.array([[123, 123], [512, 122]])
+print(np.mean(s))
+print(np.max(s))
+print(np.sum(s))
+print(np.max(s, axis=0))
+print(np.sum(s, axis=1))
+
